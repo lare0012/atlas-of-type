@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://lare0012.github.io/atlas-of-type/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Atlas of Type">
@@ -187,6 +189,10 @@ kbd, .kbtn {
 .logo { width: 34px; height: 34px; flex: none; color: var(--ink); margin-top: -2px; }
 .logo .acc { stroke: var(--accent); }
 .brand-text { min-width: 0; }
+.credit { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 12px; color: var(--muted); text-decoration: none; pointer-events: auto; }
+.credit svg { width: 19px; height: 9px; fill: #C53B31; flex: none; transform: translateY(-.5px); }
+.credit:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 3px; }
+.credit:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
 
 /* ---------- dock: layers + timeline ---------- */
 .bottom { flex-direction: column; align-items: stretch; gap: 10px; }
@@ -650,6 +656,7 @@ dialog.anat-full::backdrop { background: var(--ground); }
     <div class="brand-text">
       <h1>Atlas of Type <span id="countLine"></span></h1>
       <p>The world’s typefaces and writing systems, <em class="g">each in the place it was made</em>.</p>
+      <a class="credit" href="https://mthecreative.com" target="_blank" rel="noopener">Created by <svg viewBox="0 0 240.51 112.94" aria-hidden="true"><path d="M240.21,50.85c-.78-1.96-2.68-3.24-4.78-3.24h-98.85c-1.09,0-2.06-.66-2.47-1.67-.4-1.01-.15-2.16.63-2.91,1.52-1.45,2.01-3.69,1.22-5.64-.78-1.96-2.68-3.24-4.78-3.24h-37.84c-8.84,0-17.34-3.41-23.74-9.51l-15.81-15.12C47.4,3.41,38.9,0,30.05,0H5.16C3.05,0,1.16,1.28.37,3.24c-.78,1.96-.3,4.19,1.22,5.64l24.93,23.81c6.39,6.11,14.89,9.52,23.74,9.52h20.96c2.11,0,4,1.28,4.79,3.24.78,1.96.3,4.19-1.23,5.64l-55.46,52.96c-1.52,1.45-2.01,3.69-1.23,5.64.78,1.96,2.68,3.24,4.78,3.24h24.87c8.84,0,17.34-3.4,23.73-9.51l43.52-41.56c.49-.47,1.14-.73,1.82-.73,1.08,0,2.05.66,2.45,1.66s.15,2.15-.63,2.9l-40.18,38.37c-1.52,1.45-2.01,3.69-1.22,5.64.78,1.96,2.68,3.24,4.78,3.24h24.87c8.84,0,17.34-3.41,23.74-9.51l43.49-41.55c.49-.47,1.15-.74,1.83-.74,1.08,0,2.06.66,2.46,1.66.4,1.01.16,2.16-.63,2.91l-40.14,38.35c-1.52,1.45-2,3.69-1.22,5.64.78,1.96,2.68,3.24,4.78,3.24h24.87c8.84,0,17.35-3.41,23.74-9.51l49.12-46.93c1.52-1.45,2.01-3.69,1.22-5.64h.07Z"/></svg>M The Creative<span class="sr"> (opens mthecreative.com in a new tab)</span></a>
     </div>
   </div>
   <div class="actions" id="actions">
